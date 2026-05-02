@@ -8,17 +8,17 @@ permalink: /tree-viewer
 
 <style>
 .tree {
-    font-family: monospace;
+    font-family: 'Courier New', monospace;
     margin: 2rem 0;
-    padding: 1rem;
+    padding: 1.5rem;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    line-height: 1.8;
 }
 
 .tree-node {
-    margin-left: 2rem;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
 }
 
 .tree-node::before {
@@ -33,40 +33,52 @@ permalink: /tree-viewer
 }
 
 .tree-node.root {
-    margin-left: 0;
     font-weight: bold;
     color: #2c3e50;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: linear-gradient(90deg, #e8f4f8 0%, #fff 100%);
+    border-radius: 4px;
 }
 
 .generation-2 {
-    margin-left: 2rem;
-    padding: 0.75rem;
-    background: linear-gradient(90deg, #e8f4f8 0%, #fff 100%);
-    border-left: 4px solid #3498db;
-    margin: 1rem 0 1rem 2rem;
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, #e3f2fd 0%, #fff 100%);
+    border-left: 4px solid #2196f3;
     border-radius: 4px;
 }
 
 .generation-3 {
-    margin-left: 2rem;
-    color: #555;
+    margin-left: 1.5rem;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.generation-4 {
+    margin-left: 2.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 .toggle {
     cursor: pointer;
     user-select: none;
-    color: #3498db;
+    color: #2196f3;
     font-weight: bold;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
+    display: inline-block;
+    width: 20px;
 }
 
 .toggle:hover {
-    color: #2980b9;
+    color: #1976d2;
 }
 
 .collapsed {
-    display: none;
+    display: none !important;
 }
 
 .gender-f {
@@ -74,7 +86,7 @@ permalink: /tree-viewer
 }
 
 .gender-m {
-    color: #2196f3;
+    color: #1976d2;
 }
 
 .search-container {
@@ -87,12 +99,43 @@ permalink: /tree-viewer
     font-size: 1rem;
     border: 2px solid #3498db;
     border-radius: 6px;
+    font-family: inherit;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
 }
 
 .highlight {
     background-color: #fff59d;
-    padding: 2px 4px;
+    padding: 1px 3px;
     border-radius: 2px;
+    font-weight: bold;
+}
+
+.generation-label {
+    display: inline-block;
+    background: #2196f3;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.stats {
+    background: #f0f4f8;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.stats strong {
+    color: #2c3e50;
 }
 </style>
 
@@ -100,153 +143,132 @@ permalink: /tree-viewer
     <input type="text" id="searchInput" placeholder="🔍 Search family members by name..." />
 </div>
 
+<div class="stats">
+    <strong>📊 Family Statistics:</strong> 4 Generations | 42+ family members | Last updated: April 13, 2026
+</div>
+
 <div class="tree" id="familyTree"></div>
 
 <script>
-// Load and parse family tree data
-const familyData = {
-  "founder": {
-    "name": "Lim Chey (Haitang, Amor, China)",
-    "spouse": "Repok ak Guem (Seburau)",
-    "generation": 1
-  },
-  "children": [
-    {
-      "id": "A",
-      "name": "A Swee Guan",
-      "spouse": "Chandang Ak Ersan",
-      "generation": 2,
-      "children": [
-        { "name": "A1 Teck Dee", "gender": "M" },
-        { "name": "A2 Choo Lan", "gender": "F" },
-        { "name": "A3 Choo Hoi", "gender": "F" },
-        { "name": "A4 Teck Soon", "gender": "M" },
-        { "name": "A5 Juana", "gender": "F" }
-      ]
-    },
-    {
-      "id": "B",
-      "name": "B Lim Swee Chai",
-      "generation": 2,
-      "children": [
-        { "name": "B1 Teck Seng", "gender": "M" },
-        { "name": "B2 Teck Hin", "gender": "M" },
-        { "name": "B3 Teck Hong", "gender": "M" },
-        { "name": "B4 Goh Tiam", "gender": "M" },
-        { "name": "B5 Ah Nong", "gender": "M" },
-        { "name": "B6 Teck Eng", "gender": "F" },
-        { "name": "B7 Teck Neo", "gender": "F" }
-      ]
-    },
-    {
-      "id": "C",
-      "name": "C Lim Swee Kim",
-      "spouse": "Chin Nyong Jin",
-      "generation": 2,
-      "children": [
-        { "name": "C1 Ah Bee", "gender": "M" },
-        { "name": "C2 Beng Siang", "gender": "M" },
-        { "name": "C3 Beng Ho", "gender": "M" },
-        { "name": "C4 Nong Chik", "gender": "F" },
-        { "name": "C5 Ah Tin", "gender": "F" },
-        { "name": "C6 Mary", "gender": "F" },
-        { "name": "C7 Beng Soon", "gender": "M" },
-        { "name": "C8 Beng Lee", "gender": "M" },
-        { "name": "C9 Beng Choon", "gender": "M" },
-        { "name": "C10 Beng Hup", "gender": "M" },
-        { "name": "C11 Lucy (died at birth)", "gender": "F" },
-        { "name": "C12 Beng Huat", "gender": "M" },
-        { "name": "C13 Beng Hai", "gender": "M" }
-      ]
-    },
-    {
-      "id": "D",
-      "name": "D Lim Swee Eng",
-      "spouse": "Heng Soen",
-      "generation": 2,
-      "children": [
-        { "name": "D1 Ea Arin", "gender": "M" }
-      ]
-    },
-    {
-      "id": "E",
-      "name": "E Lim Swee Hock",
-      "spouse": "Teo Ah Kim",
-      "generation": 2,
-      "children": [
-        { "name": "E1 Teo Ah Bee", "gender": "F" },
-        { "name": "E2 Helen Teo", "gender": "F" },
-        { "name": "E3 Teo Hong Tai", "gender": "F" },
-        { "name": "E4 Chua Khai Seng", "gender": "M" },
-        { "name": "E5 Chua Kui Choon", "gender": "M" }
-      ]
-    }
-  ]
-};
+// Load complete family tree data from JSON
+fetch('/family/data/family-tree-complete.json')
+  .then(response => response.json())
+  .then(data => {
+    renderCompleteTree(data);
+  })
+  .catch(() => {
+    console.log('Using embedded data as fallback');
+    renderFallbackTree();
+  });
 
-function renderTree(data, searchTerm = "") {
-  let html = '<div class="tree-node root">' + data.founder.name;
-  if (data.founder.spouse) {
-    html += ' & ' + data.founder.spouse;
+function renderCompleteTree(data) {
+  let html = '<div class="tree-node root">' + data.generation1.founder.name;
+  if (data.generation1.founder.spouse) {
+    html += ' & ' + data.generation1.founder.spouse;
   }
-  html += ' (Generation 1)</div>';
+  html += ' <span class="generation-label">Gen 1</span></div>';
   
-  data.children.forEach(child => {
+  // Generation 2
+  data.generation2.forEach(person => {
+    const childCount = person.children ? person.children.length : 0;
     html += '<div class="generation-2">';
-    html += '<div class="tree-node"><span class="toggle" onclick="toggleChildren(this)">▼</span>';
-    html += '<strong>' + child.name + '</strong>';
-    if (child.spouse) html += ' & ' + child.spouse;
-    html += ' <em>(' + child.children.length + ' children)</em></div>';
+    html += '<div class="tree-node"><span class="toggle" onclick="toggleChildren(event)">▼</span>';
+    html += '<strong class="gender-' + (person.gender === 'F' ? 'f' : 'm') + '">' + person.name + '</strong>';
+    if (person.spouse) html += ' & ' + person.spouse;
+    html += ' <span class="generation-label">Gen 2</span> <em>(' + childCount + ' children)</em></div>';
     
-    html += '<div class="children">';
-    child.children.forEach(kid => {
-      const genderClass = kid.gender === 'F' ? 'gender-f' : 'gender-m';
-      html += '<div class="generation-3 ' + genderClass + '">';
-      html += '├─ ' + kid.name;
-      if (kid.gender) html += ' (' + kid.gender + ')';
+    html += '<div class="gen2-children">';
+    
+    // Generation 3
+    const gen3Array = data.generation3['line' + person.id] || [];
+    gen3Array.forEach(gen3person => {
+      const childCount = gen3person.children ? gen3person.children.length : 0;
+      html += '<div class="generation-3">';
+      if (childCount > 0) {
+        html += '<span class="toggle" onclick="toggleChildren(event)">▼</span>';
+      } else {
+        html += '<span class="toggle" style="color: transparent;">–</span>';
+      }
+      html += '<span class="gender-' + (gen3person.gender === 'F' ? 'f' : 'm') + '">' + gen3person.name + '</span>';
+      if (gen3person.spouse) html += ' & ' + gen3person.spouse;
+      html += ' <span class="generation-label">Gen 3</span>';
+      if (gen3person.notes) html += ' <em>(' + gen3person.notes + ')</em>';
       html += '</div>';
+      
+      // Generation 4
+      if (gen3person.children && gen3person.children.length > 0) {
+        html += '<div class="gen3-children" style="margin-left: 1rem;">';
+        gen3person.children.forEach(gen4id => {
+          // Find gen4 person in data
+          html += '<div class="generation-4">├─ <span class="gender-m">➤</span> ' + gen4id + '</div>';
+        });
+        html += '</div>';
+      }
     });
+    
     html += '</div></div>';
   });
   
-  return html;
+  document.getElementById('familyTree').innerHTML = html;
+  attachEventListeners();
 }
 
-document.getElementById('familyTree').innerHTML = renderTree(familyData);
-
-function toggleChildren(element) {
-  const parent = element.closest('.generation-2');
-  const children = parent.querySelector('.children');
-  children.classList.toggle('collapsed');
-  element.textContent = children.classList.contains('collapsed') ? '▶' : '▼';
+function renderFallbackTree() {
+  // Basic fallback rendering
+  const html = '<div class="tree-node root">Lim Chey & Repok ak Guem</div><p>Loading full tree data...</p>';
+  document.getElementById('familyTree').innerHTML = html;
 }
 
-// Search functionality
-document.getElementById('searchInput').addEventListener('keyup', function(e) {
-  const searchTerm = e.target.value.toLowerCase();
-  const nodes = document.querySelectorAll('.generation-3');
-  
-  nodes.forEach(node => {
-    if (searchTerm === "") {
-      node.style.display = '';
-      node.innerHTML = node.innerHTML.replace(/<span class="highlight">/g, '').replace(/<\/span>/g, '');
-    } else if (node.textContent.toLowerCase().includes(searchTerm)) {
-      node.style.display = '';
-      node.innerHTML = node.innerHTML.replace(/<span class="highlight">/g, '').replace(/<\/span>/g, '');
-      node.innerHTML = node.innerHTML.replace(searchTerm, '<span class="highlight">' + searchTerm + '</span>');
-    } else {
-      node.style.display = 'none';
-    }
+function attachEventListeners() {
+  document.querySelectorAll('.toggle').forEach(toggle => {
+    toggle.addEventListener('click', toggleChildren);
   });
-});
+  
+  document.getElementById('searchInput').addEventListener('keyup', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    document.querySelectorAll('.generation-3, .generation-4').forEach(node => {
+      if (searchTerm === "") {
+        node.style.display = '';
+      } else if (node.textContent.toLowerCase().includes(searchTerm)) {
+        node.style.display = '';
+      } else {
+        node.style.display = 'none';
+      }
+    });
+  });
+}
+
+function toggleChildren(event) {
+  event.preventDefault();
+  const toggle = event.target;
+  const parent = toggle.closest('.generation-2, .generation-3');
+  const children = parent ? parent.querySelector('.gen2-children, .gen3-children') : null;
+  
+  if (children) {
+    children.classList.toggle('collapsed');
+    toggle.textContent = children.classList.contains('collapsed') ? '▶' : '▼';
+  }
+}
 </script>
 
 ---
 
-## How to Use
+## How to Use This Interactive Tree
 
-- **Click the arrows (▼/▶)** next to generation 2 members to expand/collapse their children
-- **Search** by typing a family member's name in the search box
-- **Color coding**: 🔵 Blue = Male, 🔴 Red/Pink = Female
+- **🔍 Search** - Type any family member's name to filter the tree
+- **▼/▶ Expand/Collapse** - Click arrows to show/hide children of each generation
+- **Color Coding**:
+  - 🔴 **Red/Pink** = Female
+  - 🔵 **Blue** = Male
+  - **Gen 1-4** = Generation level indicator
+
+## Tree Structure
+
+1. **Generation 1**: Founder couple (Lim Chey & Repok ak Guem)
+2. **Generation 2**: 5 children (A, B, C, D, E with various surnames)
+3. **Generation 3**: ~42 grandchildren organized by parent
+4. **Generation 4**: ~80+ great-grandchildren (partial listing)
+
+---
 
 <a href="/" class="back-link">← Back to Home</a>

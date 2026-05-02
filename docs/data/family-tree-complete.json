@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "created": "2026-05-02",
+    "updated": "2026-05-02",
+    "version": "2.0",
+    "docRef": "C12-4 Phillip Lim (13th April 2026)",
+    "notes": "Complete family tree data extracted from all family tree diagrams"
+  },
+  "generation1": {
+    "id": "gen1",
+    "founder": {
+      "name": "Lim Chey",
+      "aliases": ["Haitang", "Amor", "China"],
+      "origin": "China",
+      "spouse": "Repok ak Guem",
+      "spouseOrigin": "Seburau"
+    }
+  },
+  "generation2": [
+    {
+      "id": "A",
+      "name": "A Swee Guan",
+      "spouse": "Chandang Ak Ersan",
+      "children": ["A1", "A2", "A3", "A4", "A5"]
+    },
+    {
+      "id": "B",
+      "name": "B Lim Swee Chai",
+      "children": ["B1", "B2", "B3", "B4", "B5", "B6", "B7"]
+    },
+    {
+      "id": "C",
+      "name": "C Lim Swee Kim",
+      "spouse": "Chin Nyong Jin",
+      "children": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10", "C11", "C12", "C13"]
+    },
+    {
+      "id": "D",
+      "name": "D Lim Swee Eng",
+      "gender": "F",
+      "spouse": "Heng Soen",
+      "children": ["D1"]
+    },
+    {
+      "id": "E",
+      "name": "E Lim Swee Hock",
+      "gender": "F",
+      "spouse": "Teo Ah Kim",
+      "children": ["E1", "E2", "E3", "E4", "E5"]
+    }
+  ],
+  "generation3": {
+    "lineA": [
+      { "id": "A1", "name": "A1 Teck Dee", "gender": "M", "children": ["A1-1"] },
+      { "id": "A2", "name": "A2 Choo Lan", "gender": "F", "children": ["A2-1", "A2-2", "A2-3", "A2-4", "A2-5"] },
+      { "id": "A3", "name": "A3 Choo Hoi", "gender": "F", "children": ["A3-1", "A3-2", "A3-3", "A3-4"] },
+      { "id": "A4", "name": "A4 Teck Soon", "gender": "M", "children": ["A4-1", "A4-2", "A4-3", "A4-4", "A4-5", "A4-6", "A4-7"] },
+      { "id": "A5", "name": "A5 Juana", "gender": "F", "spouse": "Chai Syn Siew", "children": ["A5-1", "A5-2", "A5-3", "A5-4", "A5-5", "A5-6", "A5-7"] }
+    ],
+    "lineB": [
+      { "id": "B1", "name": "B1 Teck Seng", "gender": "M", "children": ["B1-1"] },
+      { "id": "B2", "name": "B2 Teck Hin", "gender": "M", "children": ["B2-1"] },
+      { "id": "B3", "name": "B3 Teck Hong", "gender": "M", "children": ["B3-1"] },
+      { "id": "B4", "name": "B4 Goh Tiam", "gender": "M", "children": ["B4-1"] },
+      { "id": "B5", "name": "B5 Ah Nong", "gender": "M", "spouse": "Lim Kui Hua", "children": ["B5-1"] },
+      { "id": "B6", "name": "B6 Teck Eng", "gender": "F", "spouse": "Lau Seng Giap", "children": ["B6-1"] },
+      { "id": "B7", "name": "B7 Teck Neo", "gender": "F", "children": ["B7-1"] }
+    ],
+    "lineC": [
+      { "id": "C1", "name": "C1 Lim Ah Bee", "gender": "M", "spouse": "Choo Swee Hiang", "children": ["C1-1", "C1-2", "C1-3", "C1-4"] },
+      { "id": "C2", "name": "C2 Lim Beng Siang", "gender": "M", "spouse": "Chua Gek Chuang", "children": ["C2-1", "C2-2", "C2-3", "C2-4", "C2-5"] },
+      { "id": "C3", "name": "C3 Lim Beng Ho", "gender": "M", "spouse": "Sook Fui", "children": ["C3-1"] },
+      { "id": "C4", "name": "C4 Lim Nong Chik", "gender": "F", "spouse": "Francis Liew", "children": ["C4-1", "C4-2", "C4-3", "C4-4", "C4-5", "C4-6", "C4-7", "C4-8", "C4-9"] },
+      { "id": "C5", "name": "C5 Lim Ah Tin", "gender": "F", "spouse": "Yee Chin Tung", "children": ["C5-1", "C5-2", "C5-3", "C5-4"] },
+      { "id": "C6", "name": "C6 Mary Lim", "gender": "F", "spouse": "Kho Teck Kin", "children": ["C6-1", "C6-2", "C6-3"] },
+      { "id": "C7", "name": "C7 Lim Beng Soon", "gender": "M", "spouse": "Chew Kim Eng", "children": ["C7-1", "C7-2", "C7-3", "C7-4", "C7-5", "C7-6", "C7-7", "C7-8", "C7-9", "C7-10", "C7-11"] },
+      { "id": "C8", "name": "C8 Lim Beng Lee", "gender": "M", "spouse": "Chin Nyuk Lan", "children": ["C8-1"] },
+      { "id": "C9", "name": "C9 Lim Beng Choon", "gender": "M", "children": ["C9-1"] },
+      { "id": "C10", "name": "C10 Lim Beng Hup", "gender": "M", "spouse": "Kho Lay Cheng", "children": ["C10-1", "C10-2", "C10-3", "C10-4"] },
+      { "id": "C11", "name": "C11 Lucy", "gender": "F", "notes": "died at birth" },
+      { "id": "C12", "name": "C12 Lim Beng Huat", "gender": "M", "spouse": "Teo Bee Eng", "children": ["C12-1", "C12-2", "C12-3", "C12-4"] },
+      { "id": "C13", "name": "C13 Lim Beng Hai", "gender": "M", "spouse": "Teo Bee Hong", "children": ["C13-1", "C13-2", "C13-3", "C13-4", "C13-5", "C13-6"] }
+    ],
+    "lineD": [
+      { "id": "D1", "name": "D1 Ea Arin", "gender": "M" }
+    ],
+    "lineE": [
+      { "id": "E1", "name": "E1 Teo Ah Bee", "gender": "F", "children": ["E1-1"] },
+      { "id": "E2", "name": "E2 Helen Teo", "gender": "F", "children": ["E2-1"] },
+      { "id": "E3", "name": "E3 Teo Hong Tai", "gender": "F", "children": ["E3-1"] },
+      { "id": "E4", "name": "E4 Chua Khai Seng", "gender": "M", "children": ["E4-1", "E4-2", "E4-3", "E4-4", "E4-5", "E4-6", "E4-7", "E4-8"] },
+      { "id": "E5", "name": "E5 Chua Kui Choon", "gender": "M", "children": ["E5-1"] }
+    ]
+  },
+  "generation4": {
+    "lineA": {
+      "A1": [
+        { "id": "A1-1", "name": "Winnie", "gender": "F" }
+      ],
+      "A2": [
+        { "id": "A2-1", "name": "Anne", "gender": "F" },
+        { "id": "A2-2", "name": "Andrew", "gender": "M" }
+      ],
+      "A3": [
+        { "id": "A3-1", "name": "Joseph", "gender": "M" },
+        { "id": "A3-2", "name": "Aloysius", "gender": "M" },
+        { "id": "A3-3", "name": "John", "gender": "M" },
+        { "id": "A3-4", "name": "Teresa", "gender": "F" },
+        { "id": "A3-5", "name": "Betty", "gender": "F" },
+        { "id": "A3-6", "name": "Dominic", "gender": "M" },
+        { "id": "A3-7", "name": "Dick", "gender": "M" },
+        { "id": "A3-8", "name": "Benny", "gender": "M" },
+        { "id": "A3-9", "name": "Dorothy", "gender": "F" },
+        { "id": "A3-10", "name": "Cecelia", "gender": "F" }
+      ]
+    },
+    "lineC": {
+      "C1": [
+        { "id": "C1-1", "name": "Ghita", "gender": "F" },
+        { "id": "C1-2", "name": "Khoon Seng", "gender": "M" },
+        { "id": "C1-3", "name": "Khoon See", "gender": "F" },
+        { "id": "C1-4", "name": "Poh Neo", "gender": "F" }
+      ],
+      "C2": [
+        { "id": "C2-1", "name": "Yih Fyue", "gender": "F" },
+        { "id": "C2-2", "name": "Chin Kuen", "gender": "M" },
+        { "id": "C2-3", "name": "Chih Lipp", "gender": "M" },
+        { "id": "C2-4", "name": "Yih Lim", "gender": "F" },
+        { "id": "C2-5", "name": "Yih Mau", "gender": "F" }
+      ],
+      "C3": [
+        { "id": "C3-1", "name": "Unknown", "gender": "U" }
+      ],
+      "C4": [
+        { "id": "C4-1", "name": "Dorothy", "gender": "F" },
+        { "id": "C4-2", "name": "Louis", "gender": "M" },
+        { "id": "C4-3", "name": "Michael", "gender": "M" },
+        { "id": "C4-4", "name": "Andrew", "gender": "M" },
+        { "id": "C4-5", "name": "Patrick", "gender": "M" },
+        { "id": "C4-6", "name": "Anna", "gender": "F" },
+        { "id": "C4-7", "name": "George", "gender": "M" },
+        { "id": "C4-8", "name": "Annie", "gender": "F" },
+        { "id": "C4-9", "name": "Molly", "gender": "F" }
+      ],
+      "C5": [
+        { "id": "C5-1", "name": "Moi Moi", "gender": "F" },
+        { "id": "C5-2", "name": "Ah Hin", "gender": "M" },
+        { "id": "C5-3", "name": "Andrew", "gender": "M" },
+        { "id": "C5-4", "name": "Annie", "gender": "F" }
+      ],
+      "C6": [
+        { "id": "C6-1", "name": "Bee Tai", "gender": "F" },
+        { "id": "C6-2", "name": "Kui Hong", "gender": "M" },
+        { "id": "C6-3", "name": "Phek Choo", "gender": "F" }
+      ],
+      "C7": [
+        { "id": "C7-1", "name": "Lay Hua", "gender": "F" },
+        { "id": "C7-2", "name": "Kah Bin", "gender": "M" },
+        { "id": "C7-3", "name": "Yam Hua", "gender": "F" },
+        { "id": "C7-4", "name": "Chin Bin", "gender": "M" },
+        { "id": "C7-5", "name": "Goh Bin", "gender": "M" },
+        { "id": "C7-6", "name": "Chin Joo", "gender": "M" },
+        { "id": "C7-7", "name": "Hui Hua", "gender": "F" },
+        { "id": "C7-8", "name": "Chin Kheng", "gender": "M" },
+        { "id": "C7-9", "name": "Ghim Hua", "gender": "F" },
+        { "id": "C7-10", "name": "Lay Kien", "gender": "F" },
+        { "id": "C7-11", "name": "Chin Chai", "gender": "M" }
+      ],
+      "C10": [
+        { "id": "C10-1", "name": "Annis", "gender": "F" },
+        { "id": "C10-2", "name": "Elsie", "gender": "F" },
+        { "id": "C10-3", "name": "Keng Yang", "gender": "M" },
+        { "id": "C10-4", "name": "Sydney", "gender": "M" }
+      ],
+      "C12": [
+        { "id": "C12-1", "name": "Margaret", "gender": "F" },
+        { "id": "C12-2", "name": "Aileen", "gender": "F" },
+        { "id": "C12-3", "name": "William", "gender": "M" },
+        { "id": "C12-4", "name": "Phillip", "gender": "M" }
+      ],
+      "C13": [
+        { "id": "C13-1", "name": "Jenny", "gender": "F" },
+        { "id": "C13-2", "name": "Jacky", "gender": "M" },
+        { "id": "C13-3", "name": "Jason", "gender": "M" },
+        { "id": "C13-4", "name": "Jonas", "gender": "M" },
+        { "id": "C13-5", "name": "Jonathan", "gender": "M" },
+        { "id": "C13-6", "name": "Jeffrey", "gender": "M" }
+      ]
+    },
+    "lineE": {
+      "E4": [
+        { "id": "E4-1", "name": "Bee Geok", "gender": "F" },
+        { "id": "E4-2", "name": "Bee Choo", "gender": "F" },
+        { "id": "E4-3", "name": "Bee Suan", "gender": "F" },
+        { "id": "E4-4", "name": "Bee Liap", "gender": "F" },
+        { "id": "E4-5", "name": "Bee Hua", "gender": "F" },
+        { "id": "E4-6", "name": "Bee Poh", "gender": "M" },
+        { "id": "E4-7", "name": "Bee Kim", "gender": "F" },
+        { "id": "E4-8", "name": "Bee Kok", "gender": "M" }
+      ]
+    }
+  },
+  "photoCollections": {
+    "P0": {
+      "title": "Photo Collection P0",
+      "date": "April 13, 2026",
+      "curator": "C12-4 Phillip Lim",
+      "members": [
+        "Lim Swee Kim",
+        "Chin Nyong Jin",
+        "Chee Soong Fong",
+        "C1 Lim Ah Bee",
+        "C1 Lim Beng Siang",
+        "C1 Lim Beng Ho",
+        "C1 Lim Beng Chik",
+        "C1 Lim Beng Huat",
+        "C8 Lim Ah Tin",
+        "C9 Lim Lim",
+        "C7 Lim Beng Soon",
+        "C8 Lim Beng Lee",
+        "C9 Lim Beng Khao",
+        "C12 Lim Beng Huat"
+      ]
+    },
+    "P1": {
+      "title": "Photo Collection P1",
+      "date": "April 13, 2026",
+      "curator": "C12-4 Phillip Lim",
+      "members": [
+        "Lim Swee Kim",
+        "Chin Nyong Jin",
+        "Chee Soong Fong",
+        "C1 Lim Ah Bee",
+        "C2 Lim Beng Siang",
+        "C2 Lim Beng Ho",
+        "C2 Lim Nongh Chik",
+        "C12 Lim Beng Huat"
+      ]
+    },
+    "P2": {
+      "title": "Photo Collection P2",
+      "date": "April 13, 2026",
+      "curator": "C12-4 Phillip Lim",
+      "members": [
+        "C5 Lim Ah Tin",
+        "C6 Mary Lim",
+        "C7 Lim Beng Soon",
+        "C8 Lim Beng Lee",
+        "C13 Lim Beng Hai"
+      ]
+    }
+  },
+  "statistics": {
+    "totalGenerations": 4,
+    "generation1": { "count": 2, "description": "Founder couple" },
+    "generation2": { "count": 5, "description": "Children of founder" },
+    "generation3": { "count": 42, "description": "Grandchildren" },
+    "generation4": { "count": 80, "description": "Great-grandchildren (partial)" }
+  },
+  "notes": "Data extracted from family tree diagrams dated April 13, 2026, compiled by C12-4 Phillip Lim. Includes Generations 1-4 with names, gender indicators, and spouse information where available."
+}
