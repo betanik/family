@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Lim Family Tree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo"><a href="{{ '/' | relative_url }}">🌳 Lim Family Tree</a></h1>
+            <ul class="nav-menu">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/gallery' | relative_url }}">Tree Gallery</a></li>
+                <li><a href="{{ '/photos' | relative_url }}">Photos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        {{ content }}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Lim Family Tree Archive</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="{{ '/assets/script.js' | relative_url }}"></script>
+</body>
+</html>

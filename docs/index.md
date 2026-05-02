@@ -1,40 +1,84 @@
-# Lim Family Tree
+---
+layout: default
+---
 
-Welcome to the Lim Family Tree archive. This site contains genealogical records and family history organized by generation.
+<div class="hero">
+    <h1>🌳 Lim Family Tree</h1>
+    <p>Explore your family's genealogical history across generations</p>
+</div>
 
-## Family Tree Overview
+## Browse the Family Tree
 
-Our family tree spans multiple generations:
-- **G1-G2**: Founder generation and their children
-- **G3**: Third generation (Sections 1-2)
-- **G4**: Fourth generation (Sections 1-4)
-- **P0-P2**: Additional ancestral records
+Click on any generation below to view detailed family tree diagrams:
 
-## Browse by Generation
-
-- [G1-G2: Founder & Second Generation](generations/g1-g2)
-- [G3-S1: Third Generation Section 1](generations/g3-s1)
-- [G3-S2: Third Generation Section 2](generations/g3-s2)
-- [G4-S1: Fourth Generation Section 1](generations/g4-s1)
-- [G4-S2: Fourth Generation Section 2](generations/g4-s2)
-- [G4-S3: Fourth Generation Section 3](generations/g4-s3)
-- [G4-S4: Fourth Generation Section 4](generations/g4-s4)
-- [P0: Ancestral Record P0](generations/p0)
-- [P1: Ancestral Record P1](generations/p1)
-- [P2: Ancestral Record P2](generations/p2)
-
-## Reference Photos
-
-The following reference photos are available:
-- [IMG_2612](photos/img-2612)
-- [IMG_2613](photos/img-2613)
-- [IMG_2614](photos/img-2614)
-- [IMG_2615](photos/img-2615)
-
-## How to Use This Site
-
-Navigate using the links above to view different sections of the family tree. Each generation is organized into sections for easier viewing.
+<div class="generation-grid">
+    <div class="generation-card">
+        <h3>📜 Founder & Second Generation</h3>
+        <p>G1-G2</p>
+        <a href="generations/g1-g2">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>👥 Third Generation - Part 1</h3>
+        <p>G3-S1</p>
+        <a href="generations/g3-s1">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>👥 Third Generation - Part 2</h3>
+        <p>G3-S2</p>
+        <a href="generations/g3-s2">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>👨‍👩‍👧‍👦 Fourth Generation - Part 1</h3>
+        <p>G4-S1</p>
+        <a href="generations/g4-s1">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>👨‍👩‍👧‍👦 Fourth Generation - Part 2</h3>
+        <p>G4-S2</p>
+        <a href="generations/g4-s2">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>👨‍👩‍👧‍👦 Fourth Generation - Part 3</h3>
+        <p>G4-S3</p>
+        <a href="generations/g4-s3">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>👨‍👩‍👧‍👦 Fourth Generation - Part 4</h3>
+        <p>G4-S4</p>
+        <a href="generations/g4-s4">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>📋 Ancestral Record</h3>
+        <p>P0</p>
+        <a href="generations/p0">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>📋 Ancestral Record</h3>
+        <p>P1</p>
+        <a href="generations/p1">View Tree</a>
+    </div>
+    
+    <div class="generation-card">
+        <h3>📋 Ancestral Record</h3>
+        <p>P2</p>
+        <a href="generations/p2">View Tree</a>
+    </div>
+</div>
 
 ---
 
-*Last updated: May 2, 2026*
+## 📸 Reference Photos
+
+View additional [reference photos](photos/) that provide context for the family tree.
+
+---
+
+**Start exploring** by clicking on any generation card above, or use the navigation menu to browse photos.
