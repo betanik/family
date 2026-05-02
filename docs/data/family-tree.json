@@ -1,0 +1,128 @@
+{
+  "created": "2026-05-02",
+  "version": "1.0",
+  "root": {
+    "id": "gen1-root",
+    "name": "Lim Chey (Haitang, Amor, China)",
+    "spouse": "Repok ak Guem (Seburau)",
+    "notes": "Founder generation",
+    "generation": 1,
+    "children": [
+      {
+        "id": "A",
+        "name": "A Swee Guan",
+        "maidenName": "Chandang Ak Ersan",
+        "generation": 2,
+        "spouse": null,
+        "children": [
+          {"id": "A1", "name": "A1 Teck Dee", "gender": "M"},
+          {"id": "A2", "name": "A2 Choo Lan (f)", "gender": "F"},
+          {"id": "A3", "name": "A3 Choo Hoi (f)", "gender": "F"},
+          {"id": "A4", "name": "A4 Teck Soon", "gender": "M"},
+          {"id": "A5", "name": "A5 Juana (f)", "gender": "F"}
+        ]
+      },
+      {
+        "id": "B",
+        "name": "B Lim Swee Chai",
+        "generation": 2,
+        "children": [
+          {"id": "B1", "name": "B1 Teck Seng", "gender": "M"},
+          {"id": "B2", "name": "B2 Teck Hin", "gender": "M"},
+          {"id": "B3", "name": "B3 Teck Hong", "gender": "M"},
+          {"id": "B4", "name": "B4 Goh Tiam", "gender": "M"},
+          {"id": "B5", "name": "B5 Ah Nong", "gender": "M"},
+          {"id": "B6", "name": "B6 Teck Eng (f)", "gender": "F"},
+          {"id": "B7", "name": "B7 Teck Neo (f)", "gender": "F"}
+        ]
+      },
+      {
+        "id": "C",
+        "name": "C Lim Swee Kim",
+        "spouse": "Chin Nyong Jin",
+        "generation": 2,
+        "children": [
+          {"id": "C1", "name": "C1 Ah Bee", "gender": "M"},
+          {"id": "C2", "name": "C2 Beng Siang", "gender": "M"},
+          {"id": "C3", "name": "C3 Beng Ho", "gender": "M"},
+          {"id": "C4", "name": "C4 Nong Chik (f)", "gender": "F"},
+          {"id": "C5", "name": "C5 Ah Tin (f)", "gender": "F"},
+          {"id": "C6", "name": "C6 Mary (f)", "gender": "F"},
+          {"id": "C7", "name": "C7 Beng Soon", "gender": "M"},
+          {"id": "C8", "name": "C8 Beng Lee", "gender": "M"},
+          {"id": "C9", "name": "C9 Beng Choon", "gender": "M"},
+          {"id": "C10", "name": "C10 Beng Hup", "gender": "M"},
+          {"id": "C11", "name": "C11 Lucy (f) - died at birth", "gender": "F"},
+          {"id": "C12", "name": "C12 Beng Huat", "gender": "M"},
+          {"id": "C13", "name": "C13 Beng Hai", "gender": "M"}
+        ]
+      },
+      {
+        "id": "D",
+        "name": "D Lim Swee Eng (f)",
+        "spouse": "Heng Soen",
+        "generation": 2,
+        "children": [
+          {"id": "D1", "name": "D1 Ea Arin", "gender": "M"}
+        ]
+      },
+      {
+        "id": "E",
+        "name": "E Lim Swee Hock (f)",
+        "spouse": "Teo Ah Kim",
+        "generation": 2,
+        "children": [
+          {"id": "E1", "name": "E1 Teo Ah Bee", "gender": "F"},
+          {"id": "E2", "name": "E2 Helen Teo (f)", "gender": "F"},
+          {"id": "E3", "name": "E3 Teo Hong Tai (f)", "gender": "F"},
+          {"id": "E4", "name": "E4 Chua Khai Seng", "gender": "M"},
+          {"id": "E5", "name": "E5 Chua Kui Choon", "gender": "M"}
+        ]
+      }
+    ]
+  },
+  "generation3": {
+    "note": "Generation 3 details from G3-S1 and G3-S2",
+    "lineA": {
+      "A1": {
+        "id": "A1",
+        "name": "A1 Teck Dee",
+        "children": [
+          {"id": "A1-1", "name": "A1-1 (name to be filled)"}
+        ]
+      }
+    },
+    "lineC": {
+      "C1": {
+        "id": "C1",
+        "name": "C1 Lim Ah Bee",
+        "spouse": "Choo Swee Hiang",
+        "children": [
+          {"id": "C1-1", "name": "C1-1 Ghita (f)"},
+          {"id": "C1-2", "name": "C1-2 Khoon Seng"},
+          {"id": "C1-3", "name": "C1-3 Khoon See"},
+          {"id": "C1-4", "name": "C1-4 Poh Neo (f)"}
+        ]
+      },
+      "C7": {
+        "id": "C7",
+        "name": "C7 Lim Beng Soon",
+        "spouse": "No data",
+        "children": [
+          {"id": "C7-1", "name": "C7-1 Lay Hua (f)"},
+          {"id": "C7-2", "name": "C7-2 Kah Bin"},
+          {"id": "C7-3", "name": "C7-3 Yam Hua (f)"},
+          {"id": "C7-4", "name": "C7-4 Chin Bin"},
+          {"id": "C7-5", "name": "C7-5 Goh Bin"},
+          {"id": "C7-6", "name": "C7-6 Chin Joo"},
+          {"id": "C7-7", "name": "C7-7 Hui Hua (f)"},
+          {"id": "C7-8", "name": "C7-8 Chin Kheng"},
+          {"id": "C7-9", "name": "C7-9 Ghim Hua (f)"},
+          {"id": "C7-10", "name": "C7-10 Lay Kien (f)"},
+          {"id": "C7-11", "name": "C7-11 Chin Chai"}
+        ]
+      }
+    }
+  },
+  "notes": "Data extracted from family tree diagrams. Some names may need verification. (f) indicates female."
+}

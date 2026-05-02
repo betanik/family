@@ -7,6 +7,22 @@ layout: default
     <p>Explore your family's genealogical history across generations</p>
 </div>
 
+## 🌳 Interactive Tools
+
+<div class="generation-grid">
+    <div class="generation-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <h3>📊 Interactive Tree Viewer</h3>
+        <p>Searchable family tree with expandable branches</p>
+        <a href="tree-viewer" style="background: rgba(255,255,255,0.3);">View Interactive Tree</a>
+    </div>
+    
+    <div class="generation-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+        <h3>📸 Photo Index</h3>
+        <p>Family member photos with complete identification</p>
+        <a href="photos-index" style="background: rgba(255,255,255,0.3);">View Photo Index</a>
+    </div>
+</div>
+
 ## Browse the Family Tree
 
 Click on any generation below to view detailed family tree diagrams:
