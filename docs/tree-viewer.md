@@ -313,7 +313,25 @@ function renderCompleteTree(data) {
       if (gen3person.children && gen3person.children.length > 0) {
         html += '<div class="gen3-children" style="margin-left: 1rem;">';
         gen3person.children.forEach(gen4id => {
-          html += '<div class="generation-4">├─ <span class="gender-m">➤</span> ' + gen4id + '</div>';
+          // Find gen4 person in data structure
+          let gen4Name = gen4id;
+          let gen4Gender = 'M';
+          
+          // Search through all generation 4 data
+          Object.keys(data.generation4).forEach(lineKey => {
+            Object.keys(data.generation4[lineKey]).forEach(gen3Key => {
+              if (data.generation4[lineKey][gen3Key]) {
+                const gen4Person = data.generation4[lineKey][gen3Key].find(p => p.id === gen4id);
+                if (gen4Person) {
+                  gen4Name = gen4Person.name;
+                  gen4Gender = gen4Person.gender || 'M';
+                }
+              }
+            });
+          });
+          
+          const genderClass = gen4Gender === 'F' ? 'gender-f' : (gen4Gender === 'M' ? 'gender-m' : '');
+          html += '<div class="generation-4"><span class="' + genderClass + '">└─ ' + gen4Name + '</span></div>';
         });
         html += '</div>';
       }

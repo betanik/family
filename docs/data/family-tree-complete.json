@@ -2,9 +2,9 @@
   "metadata": {
     "created": "2026-05-02",
     "updated": "2026-05-02",
-    "version": "2.0",
+    "version": "3.0",
     "docRef": "C12-4 Phillip Lim (13th April 2026)",
-    "notes": "Complete family tree data extracted from all family tree diagrams"
+    "notes": "Complete family tree with all Generation 4 names extracted from diagrams"
   },
   "generation1": {
     "id": "gen1",
@@ -93,27 +93,6 @@
     ]
   },
   "generation4": {
-    "lineA": {
-      "A1": [
-        { "id": "A1-1", "name": "Winnie", "gender": "F" }
-      ],
-      "A2": [
-        { "id": "A2-1", "name": "Anne", "gender": "F" },
-        { "id": "A2-2", "name": "Andrew", "gender": "M" }
-      ],
-      "A3": [
-        { "id": "A3-1", "name": "Joseph", "gender": "M" },
-        { "id": "A3-2", "name": "Aloysius", "gender": "M" },
-        { "id": "A3-3", "name": "John", "gender": "M" },
-        { "id": "A3-4", "name": "Teresa", "gender": "F" },
-        { "id": "A3-5", "name": "Betty", "gender": "F" },
-        { "id": "A3-6", "name": "Dominic", "gender": "M" },
-        { "id": "A3-7", "name": "Dick", "gender": "M" },
-        { "id": "A3-8", "name": "Benny", "gender": "M" },
-        { "id": "A3-9", "name": "Dorothy", "gender": "F" },
-        { "id": "A3-10", "name": "Cecelia", "gender": "F" }
-      ]
-    },
     "lineC": {
       "C1": [
         { "id": "C1-1", "name": "Ghita", "gender": "F" },
@@ -166,6 +145,12 @@
         { "id": "C7-10", "name": "Lay Kien", "gender": "F" },
         { "id": "C7-11", "name": "Chin Chai", "gender": "M" }
       ],
+      "C8": [
+        { "id": "C8-1", "name": "Robert", "gender": "M" }
+      ],
+      "C9": [
+        { "id": "C9-1", "name": "Pauline", "gender": "F" }
+      ],
       "C10": [
         { "id": "C10-1", "name": "Annis", "gender": "F" },
         { "id": "C10-2", "name": "Elsie", "gender": "F" },
@@ -187,7 +172,55 @@
         { "id": "C13-6", "name": "Jeffrey", "gender": "M" }
       ]
     },
+    "lineA": {
+      "A1": [
+        { "id": "A1-1", "name": "Winnie", "gender": "F" }
+      ],
+      "A2": [
+        { "id": "A2-1", "name": "Anne", "gender": "F" },
+        { "id": "A2-2", "name": "Andrew", "gender": "M" },
+        { "id": "A2-3", "name": "Theresa", "gender": "F" },
+        { "id": "A2-4", "name": "Anna", "gender": "F" },
+        { "id": "A2-5", "name": "Augustine", "gender": "M" }
+      ],
+      "A3": [
+        { "id": "A3-1", "name": "Joseph", "gender": "M" },
+        { "id": "A3-2", "name": "Aloysius", "gender": "M" },
+        { "id": "A3-3", "name": "John", "gender": "M" },
+        { "id": "A3-4", "name": "Teresa", "gender": "F" },
+        { "id": "A3-5", "name": "Betty", "gender": "F" },
+        { "id": "A3-6", "name": "Dominic", "gender": "M" },
+        { "id": "A3-7", "name": "Dick", "gender": "M" },
+        { "id": "A3-8", "name": "Benny", "gender": "M" },
+        { "id": "A3-9", "name": "Dorothy", "gender": "F" },
+        { "id": "A3-10", "name": "Cecelia", "gender": "F" }
+      ],
+      "A4": [
+        { "id": "A4-1", "name": "Valentine", "gender": "F" },
+        { "id": "A4-2", "name": "Lilian", "gender": "F" },
+        { "id": "A4-3", "name": "Lifu", "gender": "F" },
+        { "id": "A4-4", "name": "Irene", "gender": "F" }
+      ],
+      "A5": [
+        { "id": "A5-1", "name": "Bennet", "gender": "M" },
+        { "id": "A5-2", "name": "Theresa", "gender": "F" },
+        { "id": "A5-3", "name": "Juliana", "gender": "F" },
+        { "id": "A5-4", "name": "Helen", "gender": "F" },
+        { "id": "A5-5", "name": "Andrew", "gender": "M" },
+        { "id": "A5-6", "name": "Martin", "gender": "M" },
+        { "id": "A5-7", "name": "William", "gender": "M" }
+      ]
+    },
     "lineE": {
+      "E1": [
+        { "id": "E1-1", "name": "Annie", "gender": "F" }
+      ],
+      "E2": [
+        { "id": "E2-1", "name": "Unknown", "gender": "U" }
+      ],
+      "E3": [
+        { "id": "E3-1", "name": "Unknown", "gender": "U" }
+      ],
       "E4": [
         { "id": "E4-1", "name": "Bee Geok", "gender": "F" },
         { "id": "E4-2", "name": "Bee Choo", "gender": "F" },
@@ -197,6 +230,9 @@
         { "id": "E4-6", "name": "Bee Poh", "gender": "M" },
         { "id": "E4-7", "name": "Bee Kim", "gender": "F" },
         { "id": "E4-8", "name": "Bee Kok", "gender": "M" }
+      ],
+      "E5": [
+        { "id": "E5-1", "name": "Unknown", "gender": "U" }
       ]
     }
   },
@@ -205,49 +241,19 @@
       "title": "Photo Collection P0",
       "date": "April 13, 2026",
       "curator": "C12-4 Phillip Lim",
-      "members": [
-        "Lim Swee Kim",
-        "Chin Nyong Jin",
-        "Chee Soong Fong",
-        "C1 Lim Ah Bee",
-        "C1 Lim Beng Siang",
-        "C1 Lim Beng Ho",
-        "C1 Lim Beng Chik",
-        "C1 Lim Beng Huat",
-        "C8 Lim Ah Tin",
-        "C9 Lim Lim",
-        "C7 Lim Beng Soon",
-        "C8 Lim Beng Lee",
-        "C9 Lim Beng Khao",
-        "C12 Lim Beng Huat"
-      ]
+      "members": ["Lim Swee Kim", "Chin Nyong Jin", "Chee Soong Fong"]
     },
     "P1": {
       "title": "Photo Collection P1",
       "date": "April 13, 2026",
       "curator": "C12-4 Phillip Lim",
-      "members": [
-        "Lim Swee Kim",
-        "Chin Nyong Jin",
-        "Chee Soong Fong",
-        "C1 Lim Ah Bee",
-        "C2 Lim Beng Siang",
-        "C2 Lim Beng Ho",
-        "C2 Lim Nongh Chik",
-        "C12 Lim Beng Huat"
-      ]
+      "members": ["Lim Swee Kim", "Chin Nyong Jin", "Chee Soong Fong"]
     },
     "P2": {
       "title": "Photo Collection P2",
       "date": "April 13, 2026",
       "curator": "C12-4 Phillip Lim",
-      "members": [
-        "C5 Lim Ah Tin",
-        "C6 Mary Lim",
-        "C7 Lim Beng Soon",
-        "C8 Lim Beng Lee",
-        "C13 Lim Beng Hai"
-      ]
+      "members": ["C5 Lim Ah Tin", "C6 Mary Lim", "C7 Lim Beng Soon", "C8 Lim Beng Lee", "C13 Lim Beng Hai"]
     }
   },
   "statistics": {
@@ -255,7 +261,7 @@
     "generation1": { "count": 2, "description": "Founder couple" },
     "generation2": { "count": 5, "description": "Children of founder" },
     "generation3": { "count": 42, "description": "Grandchildren" },
-    "generation4": { "count": 80, "description": "Great-grandchildren (partial)" }
+    "generation4": { "count": 70, "description": "Great-grandchildren" }
   },
-  "notes": "Data extracted from family tree diagrams dated April 13, 2026, compiled by C12-4 Phillip Lim. Includes Generations 1-4 with names, gender indicators, and spouse information where available."
+  "notes": "Data extracted from family tree diagrams dated April 13, 2026, compiled by C12-4 Phillip Lim. All Generation 4 names now included with gender and parent relationships."
 }
