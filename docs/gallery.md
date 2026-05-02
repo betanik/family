@@ -80,4 +80,4 @@ Browse all family tree diagrams in one place. Click any image to view it in full
     </div>
 </div>
 
-<a href="/" class="back-link">← Back to Home</a>
+<a href="{{ '/' | relative_url }}" class="back-link">← Back to Home</a>

@@ -38,4 +38,4 @@ Additional photos providing context and reference for the family tree.
     </div>
 </div>
 
-<a href="/" class="back-link">← Back to Home</a>
+<a href="{{ '/' | relative_url }}" class="back-link">← Back to Home</a>
