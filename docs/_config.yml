@@ -1,0 +1,20 @@
+title: Lim Family Tree
+description: A comprehensive family tree with genealogical records
+theme: jekyll-theme-minimal
+baseurl: "/family"
+url: "https://betanik.github.io"
+
+# Navigation
+header_links:
+  - text: Home
+    url: /
+  - text: Tree Overview
+    url: /tree
+  - text: Generations
+    url: /generations
+
+# Collections
+collections:
+  generations:
+    output: true
+    permalink: /:collection/:name
